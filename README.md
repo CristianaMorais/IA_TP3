@@ -70,7 +70,8 @@ no
 Escolha o numero da pergunta:
 A -> Em que dias da semana há um voo direto de Place1 para Place2?
 B -> Quais são os voos disponiveis para ir de Place1 a Place2 no dia D?
-C -> Tenho que visitar N locais, comecando meu voo a partir de X no dia D1 e retornando para X no dia D2. Em que sequencia devo visitar estas cidades de forma que eu nao tenha mais que um voo por dia?
+C -> Tenho que visitar N locais, comecando meu voo a partir de X no dia D1 e retornando para X no dia D2.
+Em que sequencia devo visitar estas cidades de forma que eu nao tenha mais que um voo por dia?
 
 voos -> Ver todas as viagens
 sair -> Para sair do programa
