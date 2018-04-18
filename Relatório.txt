@@ -19,13 +19,12 @@ modificadas, o código de todas as funções no programa tem de ser modificado.
 A primeira parte do programa trata-se de um planeador de viagens que recorrendo a
 uma base de dados de voos entre várias cidades, tem de ser capaz de conseguir
 responder a questões do tipo:
-/*
-- Em que dias é que existem ligações diretas entre dois aeroportos;
-- Quais são os voos que temos de apanhar num determinado dia para conseguir ir de
+
+- Quais dias em que existem ligações diretas entre dois aeroportos;
+- Quantos são os voos que temos de apanhar num determinado dia para conseguir ir de
 um aeroporto para outro;
-- Planear uma rota de viagem com inicio e fim na mesma cidade sendo necessário que
+- Planeamento de uma rota de viagem com inicio e fim na mesma cidade sendo necessário que
 este percurso passe por determinados locais.
-*/
 
 2.1. Implementação em Prolog
 Esta implementação baseia-se na utilização dos predicados dados no enunciado do
@@ -41,12 +40,11 @@ O predicado trip_plan/5 permite-nos planear um percurso ao longo de várias cida
 de forma a que seja feito um único voo por dia.
 
 2.2. Implementação em Java
-/*
-A implementação em java foi um pouco mais extensa uma vez que foi necessária a
-criação de várias estruturas de dados. Depois de interpretados os dados, estes são
+
+A nossa implementação em java foi um pouco mais extensa visto que foi necessária a
+criação de várias estruturas de dados. Após a interpretação os dados, estes são
 guardados numa árvore, onde se encontram todas as ligações entre aeroportos e os
 seus respetivos horários.
-*/
 
 3. DCG
 A segunda parte do trabalho é pedida a implementação de um analisador sintático de
