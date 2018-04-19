@@ -13,7 +13,8 @@
 
 
 ```prolog
- ?- ['Trip_Plan']. 
+ ?- ['Trip_Plan'].
+ ```
 
   - route(Place1, Place2, Day, Route).
  
@@ -25,7 +26,7 @@ Day - Dia do voo. (Indicar um dia da semana entre [mo,tu,we,th,fr,sa,su] )
 
 Route - Rota a tomar. (colocar uma variável como por exemplo R)
 
- - Exemplo:
+## Exemplos:
 
    ?- route(london, zurich,tu,R).
 R = [london-zurich:ba614:(9:10):11:45] ? ;
@@ -33,7 +34,7 @@ R = [london-zurich:sr805:(14:45):17:20] ? ;
 no
    ?- 
    
-  - flight(Place1,Place2,Day,Flight\_num,Dep_time,Arr time).
+  - flight(Place1,Place2,Day,Flight_num,Dep_time,Arr_time).
   
 Place1 - Local de partida. (Indicar o local de onde se pretende partir)
 
