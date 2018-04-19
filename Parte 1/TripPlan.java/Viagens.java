@@ -709,6 +709,7 @@ class Viagens {
 
     public void printVisita(String departDay) {
         
+	System.out.print("Percurso da sua viagem: "); 
         for (LinkedList<String> sol : voos) {
 
             for (String s : sol) {
