@@ -621,17 +621,17 @@ class Viagens {
         }
     }
 
-    public void visita(String part, String dest, LinkedList<String> locais, String diaP, String diaC, LinkedList<String> percurso) { //prints
+    public void visita(String part, String dest, LinkedList<String> locais, String diaP, String diaC, LinkedList<String> percurso) {
 
 
         percurso.addLast(part);
         Map ponto = verMap(part);
-        System.out.println(ponto);
 
-        if (verificaVoo(part, dest, diaC) && diaC.equals(diaP)) {
+        if (verificaVoo(part, dest, diaC) && !diaC.equals(diaP)) {
             percurso.addLast(dest);
             voos.addLast(copyLinkedListRota(percurso));
-        } else {
+        } 
+        else {
 
             for (Timetable l : ponto.viagens) {
 
@@ -707,7 +707,7 @@ class Viagens {
         return false;
     }
 
-    public void printVisita(String departDay) { //prints
+    public void printVisita(String departDay) {
         
         for (LinkedList<String> sol : voos) {
 
@@ -739,7 +739,7 @@ class Viagens {
                             for (String s : v.dias) {
                                 if (s.equals(departDay)) {
 
-                                    System.out.println("[" + x1 + "-" + x2 + ":" + v.semVoo + ":" + v.dep_Time[0] + ":" + v.dep_Time[1] + "]");
+                                    System.out.println("[" + x1 + "-" + x2 + "/" + v.semVoo + "/" + v.dep_Time[0] + ":" + v.dep_Time[1] + "]");
                                 }
                             }
                         }
