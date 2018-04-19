@@ -68,7 +68,7 @@ no
  
  ```
 ## Exemplo de utilização
-
+```text
 Escolha o numero da pergunta:
 
 A -> Em que dias da semana há um voo direto de Place1 para Place2?
