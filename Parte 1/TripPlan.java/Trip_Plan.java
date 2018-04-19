@@ -7,7 +7,7 @@ class Trip_Plan {
         System.out.println("Escolha o numero da pergunta:");
         System.out.println();
         System.out.println("A -> Em que dias da semana há um voo direto de Place1 para Place2?");
-        System.out.println("B -> Quais são os voos disponiveis para ir de Place1 a Place2 no dia D?");
+        System.out.println("B -> Quais são os voos disponiveis para ir de Place 1 a Place 2 no dia D?");
         System.out.println("C -> Tenho que visitar N locais, em que comecando meu voo a partir de X no dia D1 e retornando para Y no dia D2. Em que sequencia devo visitar estas cidades de forma que eu não tenha mais que um voo por dia?");
         System.out.println();
         System.out.println("voos -> Ver todas as viagens");
@@ -34,9 +34,9 @@ class Trip_Plan {
         Scanner in = new Scanner(System.in);
         switch (input){
             case "A" :{
-                System.out.print("Place1: ");
+                System.out.print("Place 1: ");
                 String a = in.next();
-                System.out.print("Place2: ");
+                System.out.print("Place 2: ");
                 String b = in.next();
 
                 String [] dias = v.vooDireto(a,b);
@@ -56,11 +56,11 @@ class Trip_Plan {
             }
 
             case "B":{
-                System.out.print("Place1: ");
+                System.out.print("Place 1: ");
                 String a = in.next();
-                System.out.print("Place2: ");
+                System.out.print("Place 2: ");
                 String b = in.next();
-                System.out.print("D: ");
+                System.out.print("Dia: ");
                 String d = in.next();
 
                 LinkedList<String> corse = new LinkedList<String>();
