@@ -609,9 +609,10 @@ class Viagens {
                 Flight target = listplane.removeFirst();
 
                 if (!sol.isEmpty()) {
-                    System.out.print(s1 + "-" + s2 + ":" + target.semVoo + ":" + target.dep_Time[0] + ":" + target.dep_Time[1] + ",");
-                } else {
-                    System.out.print(s1 + "-" + s2 + ":" + target.semVoo + ":" + target.dep_Time[0] + ":" + target.dep_Time[1]);
+                    System.out.print(s1 + "-" + s2 + "/" + target.semVoo + "/" + target.dep_Time[0] + ":" + target.dep_Time[1] + ",");
+                }
+		else {
+                    System.out.print(s1 + "-" + s2 + "/" + target.semVoo + "/" + target.dep_Time[0] + ":" + target.dep_Time[1]);
                 }
 
                 s1 = s2;
@@ -620,7 +621,7 @@ class Viagens {
         }
     }
 
-    public void visita(String part, String dest, LinkedList<String> locais, String diaP, String diaC, LinkedList<String> percurso) {
+    public void visita(String part, String dest, LinkedList<String> locais, String diaP, String diaC, LinkedList<String> percurso) { //prints
 
 
         percurso.addLast(part);
@@ -706,7 +707,7 @@ class Viagens {
         return false;
     }
 
-    public void printVisita(String departDay) {
+    public void printVisita(String departDay) { //prints
         
         for (LinkedList<String> sol : voos) {
 
