@@ -35,7 +35,7 @@ class Sentences {
         }
     }
 
-     public boolean artigoMS(String palavra){
+    public boolean artigoMS(String palavra){
         String[] artigos = {"O", "o"};
 
         for(String a: artigos){
@@ -153,7 +153,7 @@ class Sentences {
             if(substantivoMS(frase_Nom.get(1))){
                 
                 if(verbo_Singular(frase_Verb.get(0))){
-  
+                  
                     if(frase_Verb.size()==1){ 
                         retornaFrase(1);
                         return true;
@@ -190,7 +190,7 @@ class Sentences {
                                     return true;
                                 }
                             }
-                      
+                            
                             else if(substantivoMS(frase_Verb.get(2))){
                                 retornaFrase(3);
                                 return true;
@@ -342,7 +342,7 @@ class Sentences {
 
         else if(artigoFS(frase_Nom.get(0))){ 
             if(substantivoFS(frase_Nom.get(1))){ 
-         
+               
                 if(verbo_Singular(frase_Verb.get(0))){ 
                     if(frase_Verb.size()==1){
                         retornaFrase(1);
@@ -380,7 +380,7 @@ class Sentences {
                                     return true;
                                 }
                             }
-                           
+                            
                             else if(substantivoMS(frase_Verb.get(2))){
                                 retornaFrase(3);
                                 return true;
@@ -534,26 +534,31 @@ class Sentences {
         return false;
     }
 
-      private void retornaFrase(int f){
+    private void retornaFrase(int f){
         if(f == 1){
+            System.out.println();
             System.out.println("sent(frase_nom(artigo('"+frase_Nom.get(0)+"'),substantivo('"+frase_Nom.get(1)+"'))" +
-                    ",frase_Verb(verbo('"+frase_Verb.get(0)+"')))");
+                ",frase_Verb(verbo('"+frase_Verb.get(0)+"')))");
         }
         else if(f == 2){
+            System.out.println();
             System.out.println("sent(frase_nom(artigo('"+frase_Nom.get(0)+"')," +
-                    "substantivo('"+frase_Nom.get(1)+"')),frase_Verb(verbo('"+frase_Verb.get(0)+"')," +
-                    "preposicoes('"+frase_Verb.get(1)+"'),artigo('"+frase_Verb.get(2)+"'),substantivo('"+frase_Verb.get(3)+"')))");
+                "substantivo('"+frase_Nom.get(1)+"')),frase_Verb(verbo('"+frase_Verb.get(0)+"')," +
+                "preposicoes('"+frase_Verb.get(1)+"'),artigo('"+frase_Verb.get(2)+"'),substantivo('"+frase_Verb.get(3)+"')))");
         }
         else if(f == 3){
+            System.out.println();
             System.out.println("sent(frase_nom(artigo('"+frase_Nom.get(0)+"'),substantivo('"+frase_Nom.get(1)+"'))," +
-                    "frase_Verb(verbo('"+frase_Verb.get(0)+"'),preposicoes('"+frase_Verb.get(1)+"'),substantivo('"+frase_Verb.get(2)+"')))");
+                "frase_Verb(verbo('"+frase_Verb.get(0)+"'),preposicoes('"+frase_Verb.get(1)+"'),substantivo('"+frase_Verb.get(2)+"')))");
         }
         else if(f == 4){
+            System.out.println();
             System.out.println("sent(frase_nom(artigo('"+frase_Nom.get(0)+"')," +
-                    "substantivo('"+frase_Nom.get(1)+"')),frase_Verb(verbo('"+frase_Verb.get(0)+"')," +
-                    "artigo('"+frase_Verb.get(1)+"'),substantivo('"+frase_Verb.get(2)+"')))");
+                "substantivo('"+frase_Nom.get(1)+"')),frase_Verb(verbo('"+frase_Verb.get(0)+"')," +
+                "artigo('"+frase_Verb.get(1)+"'),substantivo('"+frase_Verb.get(2)+"')))");
         }
         else
-            System.out.println("Frase sintaticamente incorreta. Por favor, verifique-a e tente novamente.");
+            System.out.println();
+        System.out.println("Frase sintaticamente incorreta. Por favor, verifique-a e tente novamente.");
     }
 }
