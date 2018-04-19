@@ -4,16 +4,16 @@ import java.util.Scanner;
 class Trip_Plan {
 
     public static void show_menu(){
-	System.out.println("Escolha o numero da pergunta:");
-	System.out.println("A -> Em que dias da semana há um voo direto de Place1 para Place2?");
-	System.out.println("B -> Quais são os voos disponiveis para ir de Place1 a Place2 no dia D?");
-	System.out.println("C -> Tenho que visitar N locais, em que comecando meu voo a partir de X no dia D1 e retornando para Y no dia D2. Em que sequencia devo visitar estas cidades de forma que eu não tenha mais que um voo por dia?");
-	System.out.println();
-	System.out.println("voos -> Ver todas as viagens");
-	System.out.println("sair -> Para sair do programa");
-	System.out.println();
-	System.out.print("Qual é a pergunta que pretende?: ");
-	System.out.println();       
+        System.out.println("Escolha o numero da pergunta:");
+        System.out.println("A -> Em que dias da semana há um voo direto de Place1 para Place2?");
+        System.out.println("B -> Quais são os voos disponiveis para ir de Place1 a Place2 no dia D?");
+        System.out.println("C -> Tenho que visitar N locais, em que comecando meu voo a partir de X no dia D1 e retornando para Y no dia D2. Em que sequencia devo visitar estas cidades de forma que eu não tenha mais que um voo por dia?");
+        System.out.println();
+        System.out.println("voos -> Ver todas as viagens");
+        System.out.println("sair -> Para sair do programa");
+        System.out.println();
+        System.out.print("Qual é a pergunta que pretende?: ");
+        System.out.println();       
     }
     
     public static void readInput(Scanner in){
@@ -67,10 +67,10 @@ class Trip_Plan {
 
                 int []arr_Time = {0,0};
 
-		System.out.println();
+                System.out.println();
                 v.diaPercurso(a,b,d,corse,arr_Time,avioes);
                 v.diaRota();
-		System.out.println();
+                System.out.println();
 
                 break;
             }
@@ -97,45 +97,31 @@ class Trip_Plan {
                 String b = in.next();
                 System.out.print("D2: ");
                 String D2 = in.next();
+                System.out.println();
 
-		
-		System.out.print("ROTA DA VIAGEM: ");
-		System.out.println();
+
+                System.out.print("ROTA DA VIAGEM: ");
+                System.out.println();
                 v.visita(a,b,list,D1,D2,route);
                 v.printVisita(D1);
                 break;
             }
 
             case "voos" :
-                v.printBaseDados();
-                break;
+            v.printBaseDados();
+            break;
             
 
-      	    case "sair":
-		/*
-		System.out.println("Pretende mesmo sair? (S/N)");
-		if(in.next().equals("S"))
-		    System.exit(0);
+            case "sair":
 
-		else if(in.next().equals("N")){
-		    show_menu();
-		}
+            System.exit(0);
+            break;
 
-		else{
-		    System.out.println("Opção Inválida!");
-		    System.out.println("Resposta esperada do tipo S ou N.");
-		    System.out.println();
-		    System.out.println();
-		}
-		*/
-		System.exit(0);
-		break;
-
-	    default:
-		System.out.println("Opção Inválida!");
-		System.out.println();
-		System.out.println();
-		break;
+            default:
+            System.out.println("Opção Inválida!");
+            System.out.println();
+            System.out.println();
+            break;
 
         }
     }
