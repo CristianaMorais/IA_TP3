@@ -151,10 +151,17 @@ no
 
 ```java
  $ javac *.java && java Dcg
+```
+```text
 Intoduza uma frase em que as palavras estejam separadas por um espaco e não contenham ponto de final: 
-Caso pretenda sair escreva: sair
-A noticia correu para a floresta
-sent(frase_nom(artigo('A'),substantivo('noticia')),frase_Verb(verbo('correu'),preposicoes('para'),artigo('a'),substantivo('floresta')))
 
-Introduza uma nova frase: 
+Caso pretenda sair escreva: sair
+
+ A noticia correu para a floresta
+
+sent(frase_nom(artigo('A'),substantivo('noticia')),frase_Verb(verbo('correu'),preposicoes('para'),artigo('a'),substantivo('floresta')))
+Frase sintaticamente incorreta. Por favor, verifique-a e tente novamente.
+
+Introduza uma nova frase:
+
  ```
