@@ -66,25 +66,54 @@ no
 
  $ javac *.java && java Trip_Plan
  
- 
+ ```
+## Exemplo de utilização
+
 Escolha o numero da pergunta:
+
 A -> Em que dias da semana há um voo direto de Place1 para Place2?
 B -> Quais são os voos disponiveis para ir de Place1 a Place2 no dia D?
-C -> Tenho que visitar N locais, comecando meu voo a partir de X no dia D1 e retornando para X no dia D2.
-Em que sequencia devo visitar estas cidades de forma que eu nao tenha mais que um voo por dia?
+C -> Tenho que visitar N locais, em que comecando meu voo a partir de X no dia D1 e retornando para Y no dia D2. Em que sequencia devo visitar estas cidades de forma que eu não tenha mais que um voo por dia?
 
 voos -> Ver todas as viagens
 sair -> Para sair do programa
 
-Qual é a pergunta que pretende?: B
+Qual é a pergunta que pretende?: 
+ C
 
-Place1: london
-Place2: zurich
-D: su
+Insira "." quando terminar de inserir as cidades para visitar
+N:  london
+N:  milan
+N:  zurich
+N:  .
+X:  london
+D1:  mo
+Y:  london
+D2:  fr
 
-[london-zurich:ba614:9:10]
-[london-zurich:sr805:14:45]
+ROTA DA VIAGEM: 
+Percurso da sua viagem: london zurich london 
+london zurich milan london 
 
+DIA: mo
+[london-zurich/ba614/9:10]
+[london-zurich/sr805/14:45]
+
+DIA: tu
+[zurich-london/ba613/9:0]
+[zurich-london/yu323/16:10]
+
+DIA: we
+[london-zurich/ba614/9:10]
+[london-zurich/sr805/14:45]
+
+DIA: th
+[zurich-milan/sr620/7:55]
+
+DIA: fr
+[milan-london/az458/9:10]
+[milan-london/ba511/12:20]
+----------------------------------
 
 ```
 
