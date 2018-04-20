@@ -15,7 +15,7 @@
 ```prolog
  ?- ['Trip_Plan'].
  ```
-
+```text
   - route(Place1, Place2, Day, Route).
  
 Place1 - Local de partida. (Indicar o local de onde se pretende partir)
@@ -25,6 +25,7 @@ Place2 - Local de chegada. (Indicar o local a onde se pretende chegar)
 Day - Dia do voo. (Indicar um dia da semana entre [mo,tu,we,th,fr,sa,su] )
 
 Route - Rota a tomar. (colocar uma variável como por exemplo R)
+```
 
 ## Exemplo:
 
@@ -38,6 +39,7 @@ no
 
 ## Exemplo:
 
+```text
   - flight(Place1,Place2,Day,Flight_num,Dep_time,Arr_time).
   
 Place1 - Local de partida. (Indicar o local de onde se pretende partir)
@@ -51,6 +53,7 @@ Flight_num - Número do voo. (colocar uma variável como por exemplo N)
 Dep_time - Hora de partida. (colocar uma variável como por exemplo P)
 
 Arr_time - Hora de chegada. (colocar uma variável como por exemplo C)
+```
 
 ```prolog
    ?- flight(london,zurich,mo,N,P,C).
