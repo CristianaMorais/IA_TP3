@@ -138,8 +138,9 @@ X - variável
 
  - Exemplo:
 
-    ?- sentenca(X, ['O',cacador,correu,com,os,lobos],[]).
-X = sent(frase_nom(artigo('O'),nome(cacador)),frase_verb(verbo(correu),frase_preposicional(preposicao(com),frase_nom(artigo(os),nome(lobos))))) ? ;
+    ?- sentenca(A_Resposta, ['O',cacador,correu,com,os,lobos],[]).
+A_Resposta = sentenca(frase_nom(artigo('O'), nome(cacador)), frase_ver(verbo(correu), frase_nom(artigo(pela), nome(floresta))))
+    ? ;
 no
    ?- 
 
