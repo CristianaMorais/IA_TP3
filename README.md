@@ -150,7 +150,7 @@ X - variável
 
  - Exemplo:
 
-   ?- sentenca(X , ['A',cacador,corriam,pela,rosto],[]).
+   ?- sentenca(A_Resposta , ['A',cacador,corriam,pela,rosto],[]).
 no
    ?- 
 ```
