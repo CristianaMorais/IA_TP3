@@ -31,8 +31,6 @@ Route - Rota a tomar. (colocar uma variável como por exemplo R)
 
 ```prolog
    ?- route(london, zurich,tu,R).
-R = [london-zurich:ba614:(9:10):11:45] ? ;
-R = [london-zurich:sr805:(14:45):17:20] ? ;
 no
    ?- 
 ```
